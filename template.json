@@ -1,0 +1,41 @@
+
+{
+    "dialogue template": {
+    "characters": [
+        {
+            "chr":"name",
+            "aln":"left/right/center",
+            "img": "filePath"
+        },
+        {
+            "chr":"name",
+            "aln":"left/right/center",
+            "img": "filePath"
+        }
+    ],
+    "dialogue": [
+        {
+            "chr": "name",
+            "txt": "text"
+        },
+        {
+            "chr": "name",
+            "txt": "text"
+        }
+    ]},
+
+    "item template":
+    {
+        "items":
+        [
+            {
+                "key": "item name",
+                "value": "item text"
+            },
+            {
+                "key": "item name",
+                "value": "item text"
+            }
+        ]
+    }
+}
