@@ -1,0 +1,24 @@
+{
+  "items": [
+    {
+      "name": "red block",
+      "text": "This block (a type of square (a type of basic shape)) is red ( a color (created by the scattering of light)).",
+      "image": "red"
+    },
+    {
+      "name": "blue block",
+      "text": "This is a Block (blue) it is blue. (This one doesn't really exist. Don't ask.)",
+      "image": "blue"
+    },
+    {
+      "name": "yellow block",
+      "text": "Oh look! The Sun! Wait... No... That's just a yellow block.",
+      "image": "yellow"
+    },
+    {
+      "name": "green block",
+      "text": "Don't touch! It's corrosive.",
+      "image": "green"
+    }
+  ]
+}

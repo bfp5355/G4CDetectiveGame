@@ -1,6 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\G4CDetectiveGame",
+    "\\G4CDetectiveGame\\Assets",
+    "\\G4CDetectiveGame\\Assets\\JSON",
+    "\\G4CDetectiveGame\\Assets\\Scripts"
   ],
+  "SelectedNode": "\\G4CDetectiveGame\\Assets\\JSON\\template.json",
   "PreviewInSolutionExplorer": false
 }
