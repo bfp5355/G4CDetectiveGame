@@ -29,14 +29,12 @@
         "items":
         [
             {
-                "key": "item name",
-              "value": "item text",
-              "image":  "image path"
+                "key": "item_name",
+              "text": "item text"
             },
           {
-            "key": "item name",
-            "value": "item text",
-            "image": "image path"
+            "key": "item_name",
+            "text": "item text"
           }
         ]
     }

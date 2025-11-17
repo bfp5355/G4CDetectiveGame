@@ -8,7 +8,6 @@ public class Item //Item class
 {
     public string name;
     public string text;
-    public string image;
 }
 
 [System.Serializable]

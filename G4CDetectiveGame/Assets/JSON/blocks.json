@@ -1,24 +1,20 @@
 {
   "items": [
     {
-      "name": "red block",
-      "text": "This block (a type of square (a type of basic shape)) is red ( a color (created by the scattering of light)).",
-      "image": "red"
+      "name": "red_square",
+      "text": "This block (a type of square (a type of basic shape)) is red ( a color (created by the scattering of light))."
     },
     {
-      "name": "blue block",
-      "text": "This is a Block (blue) it is blue. (This one doesn't really exist. Don't ask.)",
-      "image": "blue"
+      "name": "blue_square",
+      "text": "This is a Block (blue) it is blue. (This one doesn't really exist. Don't ask.)"
     },
     {
-      "name": "yellow block",
-      "text": "Oh look! The Sun! Wait... No... That's just a yellow block.",
-      "image": "yellow"
+      "name": "yellow_square",
+      "text": "Oh look! The Sun! Wait... No... That's just a yellow block."
     },
     {
-      "name": "green block",
-      "text": "Don't touch! It's corrosive.",
-      "image": "green"
+      "name": "green_square",
+      "text": "Don't touch! It's corrosive."
     }
   ]
 }

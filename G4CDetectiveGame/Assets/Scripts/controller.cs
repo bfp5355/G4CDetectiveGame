@@ -1,42 +1,67 @@
 using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.UI;
+using TMPro;
 
 public class controller : MonoBehaviour
 {
     public TextAsset json;
     private List<Item> items = new List<Item>();
 
+    public GameObject red_square;
+    public GameObject blue_square;
+    public GameObject green_square;
+    public GameObject yellow_square;
     public GameObject image;
     public Canvas canvas;
+    public GameObject dialogue_box;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         items = jsonParse.DeserializeList(json.text);//parses items into a list
-
+        //GameObject sqr = new GameObject();
 
         //This is super temp to get this to work as a proof of concept. Will have to do more work to get file pathing working for sprites and images
-        for(int i = 0; i < items.Count; i++)//debug logs items and populates them on the screen
+        for (int i = 0; i < items.Count; i++)//debug logs items and populates them on the screen
         {
-            Debug.Log(items[i].name);
+            //Less Jank Item creation
+            
+            //sqr.name = items[i].name;
+            //
+            //switch (items[i].name)
+            //{
+            //    case "red_square":
+            //            sqr = Instantiate(red_square);
+            //        break;
+            //    case "blue_square":
+            //        sqr = Instantiate(blue_square);
+            //        break;
+            //    case "green_square":
+            //        sqr = Instantiate(green_square);
+            //        break;
+            //    case "yellow_square":
+            //        sqr = Instantiate(yellow_square);
+            //        break;
+            //
+            //}
 
             //Jank item creation
             GameObject sqr = Instantiate(image);//creates new object
             sqr.name = i.ToString();
-
-            switch(items[i].image)//Setting color
+            
+            switch(items[i].name)//Setting color
             {
-                case "red":
+                case "red_square":
                     sqr.GetComponent<Image>().color = Color.red;
                     break;
-                case "blue":
+                case "blue_square":
                     sqr.GetComponent<Image>().color = Color.blue;
                     break;
-                case "yellow":
+                case "yellow_square":
                     sqr.GetComponent<Image>().color = Color.yellow;
                     break;
-                case "green":
+                case "green_square":
                     sqr.GetComponent<Image>().color = Color.green;
                     break;
             }
@@ -49,8 +74,10 @@ public class controller : MonoBehaviour
             //add event listener for item clicking
             sqr.GetComponent<Button>().onClick.AddListener(() => 
             {
-                Debug.Log("click");
-                canvas.GetComponent<Text>().text = items[int.Parse(sqr.name)].text;
+                //Create Dialogue Box
+                GameObject box = Instantiate(dialogue_box);
+                box.transform.SetParent(canvas.transform);
+                box.GetComponent<dialogue_box>().str = items[int.Parse(sqr.name)].text;
             });
         }
     }
