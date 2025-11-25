@@ -1,28 +1,11 @@
 
 {
-    "dialogue template": {
-    "characters": [
-        {
-            "chr":"name",
-            "aln":"left/right/center",
-            "img": "filePath"
-        },
-        {
-            "chr":"name",
-            "aln":"left/right/center",
-            "img": "filePath"
-        }
-    ],
-    "dialogue": [
-        {
-            "chr": "name",
-            "txt": "text"
-        },
-        {
-            "chr": "name",
-            "txt": "text"
-        }
-    ]},
+  "dialogue template": {
+    "text": [
+      "speaker:\nstring",
+      "other speaker:\nnext string"
+    ]
+  },
 
     "item template":
     {

@@ -14,7 +14,7 @@ public class controller : MonoBehaviour
     public GameObject yellow_square;
     public GameObject image;
     public Canvas canvas;
-    public GameObject dialogue_box;
+    public GameObject item_box;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -75,7 +75,7 @@ public class controller : MonoBehaviour
             sqr.GetComponent<Button>().onClick.AddListener(() => 
             {
                 //Create Dialogue Box
-                GameObject box = Instantiate(dialogue_box);
+                GameObject box = Instantiate(item_box);
                 box.transform.SetParent(canvas.transform);
                 box.GetComponent<dialogue_box>().str = items[int.Parse(sqr.name)].text;
             });

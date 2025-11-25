@@ -16,6 +16,12 @@ public class ItemList //Item List class
     public List<Item> items;
 }
 
+[System.Serializable]
+public class DialogueList //VN dialogue
+{
+    public List<string> text;
+}
+
 public class jsonParse
 {
     /// <summary>
@@ -42,6 +48,18 @@ public class jsonParse
         itemList = JsonUtility.FromJson<ItemList>(json);
 
         return itemList.items;
+    }
+
+    /// <summary>
+    /// deserializes the text
+    /// </summary>
+    /// <param name="json"></param>
+    /// <returns></returns>
+    public static List<string> DeserializeDialogue(string json)
+    {
+        DialogueList dialogueList = new DialogueList();
+        dialogueList = JsonUtility.FromJson<DialogueList>(json);
+        return dialogueList.text;
     }
     
 }
