@@ -44,11 +44,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fdcd0dcfb52c8048a3c882302ae3af1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  json: {fileID: 4900000, guid: 6637b569fca4a9048915c3ca917146df, type: 3}
-  red_square: {fileID: 3197771297981742541, guid: 4eca10aff4a3aad469117776aee759e0, type: 3}
-  blue_square: {fileID: 2297492442374519021, guid: d1cd3d47d3d27b54f8999d1f7f685cb3, type: 3}
-  green_square: {fileID: 7270343635376955420, guid: a614f5cb7f6f1164093bcb213d13a897, type: 3}
-  yellow_square: {fileID: 4084761766039768328, guid: 7f1fc37fce18fc0488427d8396d1d27f, type: 3}
-  image: {fileID: 8867007425618869700, guid: b2240c908b28e484987be1199c0ec2ed, type: 3}
+  self: {fileID: 0}
+  firstJson: {fileID: 0}
+  secondJson: {fileID: 0}
+  thirdJson: {fileID: 0}
+  dialogue_box: {fileID: 0}
+  items: []
   canvas: {fileID: 0}
   item_box: {fileID: 0}
+  itemsClicked: 0
+  itemBoxClosed: 0
+  notebook_Icon: {fileID: 0}
+  notebook: {fileID: 0}
+  dialoguesDone: 0

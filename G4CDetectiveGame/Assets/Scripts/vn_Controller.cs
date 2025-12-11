@@ -4,16 +4,17 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+//Intended for standalone visual novel scenes
 public class vn_Controller : MonoBehaviour
 {
-    public TextAsset json;
-    private List<string> dialogue = new List<string>();
+    public TextAsset json;//dialogue json
+    private List<string> dialogue = new List<string>();//the dialogue list
 
-    public GameObject button;
-    private int index = 0;
-    public GameObject text;
-    public GameObject buttonText;
-
+    public GameObject button;//button to progress
+    private int index = 0;//index
+    public GameObject text;//dialogue text
+    public GameObject buttonText;//buttontext
+    public bool finale = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -24,7 +25,10 @@ public class vn_Controller : MonoBehaviour
         {
             if(index == dialogue.Count)//Changes scene when dialogue reaches the end
             {
-                SceneManager.LoadScene("point_n_click_Scene");
+                if(finale == false)
+                {
+                    SceneManager.LoadScene("point_n_click_Scene");
+                }
             }
             else//increments index
             {

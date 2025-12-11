@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5169998832774803173}
   - component: {fileID: 6328991530100963019}
   - component: {fileID: -5906198427825006726}
+  - component: {fileID: 5921867766658325109}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -120,3 +121,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &5921867766658325109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8867007425618869700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841464a768c1ba14e81c953b53977b75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: Sample Texk
